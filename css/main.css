@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    padding: 1em;
+    background-color: #fff;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333;
+}
+
+h1 {
+    padding: 1em 1em 0.5em 0;
+    color: #666;
+    font-size: 100%;
+    margin: 0;
+}
+
+hr {
+    border-top: 2px solid #e3e3e3;
+}
+
+hr:last-of-type {
+    display: none;
+}
+
+pre {
+    overflow: auto;
+    margin: 1em 0;
+    line-height: 2em;
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: pre-wrap;
+}
+
+footer {
+    margin: 1em;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* ***** */
+/* Icons */
+/* ***** */
+
+pre a[href]:before,
+pre a[href$="/"]:before {
+    content: "";
+    padding: 5px 25px 0 0;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 16px 16px;
+}
+
+a[href]:before {
+    background: url(../images/icons/default.png);
+}
+
+a[href$="/"]:before {
+    background: url(../images/icons/folder.png);
+}
+
+/* Checksums */
+
+a[href$=".md5"]:before {
+    background: url(../images/icons/checksum.png);
+}
+
+/* Compression */
+
+a[href$=".bz2"]:before {
+   background: url(../images/icons/bz2.png);
+}
+
+a[href$=".gz"]:before {
+   background: url(../images/icons/gz.png);
+}
+
+a[href$=".tar.gz"]:before {
+   background: url(../images/icons/tar.gz.png);
+}
+
+/* Vagrant */
+
+a[href$=".box"]:before {
+   background: url(../images/icons/vagrant.png);
+}
+
+/* Debian */
+
+a[href$=".deb"]:before {
+   background: url(../images/icons/debian.png);
+}
+
+/* Crypt */
+
+a[href$=".gpg"]:before {
+   background: url(../images/icons/crypt.png);
+}
+
+/* Images */
+
+a[href$=".png"]:before {
+   background: url(../images/icons/image.png);
+}
+
+a[href$=".jpg"]:before {
+   background: url(../images/icons/image.png);
+}
+
+a[href$=".jpeg"]:before {
+   background: url(../images/icons/image.png);
+}
+
+a[href$=".gif"]:before {
+   background: url(../images/icons/image.png);
+}
+
+a[href$=".svg"]:before {
+   background: url(../images/icons/image.png);
+}
+
+/* Videos */
+
+a[href$=".mp4"]:before {
+   background: url(../images/icons/video.png);
+}
+
+a[href$=".mov"]:before {
+   background: url(../images/icons/video.png);
+}
+
+a[href$=".avi"]:before {
+   background: url(../images/icons/video.png);
+}
+
+a[href$=".mkv"]:before {
+   background: url(../images/icons/video.png);
+}
+
+a[href$=".flv"]:before {
+   background: url(../images/icons/video.png);
+}
+
+a[href$=".wmv"]:before {
+   background: url(../images/icons/video.png);
+}
+
+a[href$=".webm"]:before {
+   background: url(../images/icons/video.png);
+}
+
+/* Responsive Mobile Design */
+@media (max-width: 768px) {
+    body {
+        padding: 0.5em;
+    }
+
+    h1 {
+        padding: 0.75em;
+        font-size: 1.5em;
+    }
+
+    pre {
+        margin: 0.75em 0;
+        font-size: 0.875em;
+    }
+
+    footer {
+        margin: 0.75em 0;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0.25em;
+    }
+
+    h1 {
+        padding: 0.5em;
+        font-size: 1.25em;
+    }
+
+    pre {
+        margin: 0.5em 0;
+        font-size: 0.75em;
+        line-height: 1.5em;
+    }
+
+    footer {
+        margin: 0.5em 0;
+        font-size: 0.875em;
+    }
+}
