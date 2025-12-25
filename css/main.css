@@ -16,7 +16,7 @@ a:hover {
 h1 {
     padding: 1em 1em 0.5em 0;
     color: #666;
-    font-size: 100%;
+    font-size: 1.25em;
     margin: 0;
 }
 
@@ -35,6 +35,7 @@ pre {
     word-wrap: break-word;
     word-break: break-all;
     white-space: pre-wrap;
+    font-size: 1em;
 }
 
 footer {
@@ -171,7 +172,13 @@ a[href$=".webm"]:before {
 
     pre {
         margin: 0.75em 0;
-        font-size: 0.875em;
+        font-size: 1em;
+    }
+
+    /* Make each file entry easier to tap and read on tablets */
+    pre a[href] {
+        display: block;
+        padding: 0.5em 0;
     }
 
     footer {
@@ -191,8 +198,21 @@ a[href$=".webm"]:before {
 
     pre {
         margin: 0.5em 0;
-        font-size: 0.75em;
+        font-size: 1em;
         line-height: 1.5em;
+        overflow-x: auto;
+        white-space: pre;
+    }
+
+    /* On very small screens, truncate long filenames so the date column stays visible */
+    pre a[href] {
+        display: inline-block;
+        padding: 0.6em 0;
+        max-width: calc(100% - 14ch);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        vertical-align: middle;
     }
 
     footer {

@@ -1,3 +1,8 @@
+/*!
+ * Bootstrap v4.0.0-alpha (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
 
 if (typeof jQuery === 'undefined') {
   throw new Error('Bootstrap\'s JavaScript requires jQuery')
@@ -13,6 +18,12 @@ if (typeof jQuery === 'undefined') {
 
 +function ($) {
 
+/**
+ * --------------------------------------------------------------------------
+ * Bootstrap (v4.0.0): util.js
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * --------------------------------------------------------------------------
+ */
 
 'use strict';
 
@@ -41,6 +52,7 @@ var Util = (function ($) {
     transition: 'transitionend'
   };
 
+  // shoutout AngusCroll (https://goo.gl/pxwQGp)
   function toType(obj) {
     return ({}).toString.call(obj).match(/\s([a-zA-Z]+)/)[1].toLowerCase();
   }
@@ -170,6 +182,13 @@ var Util = (function ($) {
 
   return Util;
 })(jQuery);
+
+/**
+ * --------------------------------------------------------------------------
+ * Bootstrap (v4.0.0): alert.js
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * --------------------------------------------------------------------------
+ */
 
 var Alert = (function ($) {
 
@@ -350,6 +369,13 @@ var Alert = (function ($) {
   return Alert;
 })(jQuery);
 
+/**
+ * --------------------------------------------------------------------------
+ * Bootstrap (v4.0.0): button.js
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * --------------------------------------------------------------------------
+ */
+
 var Button = (function ($) {
 
   /**
@@ -508,6 +534,13 @@ var Button = (function ($) {
 
   return Button;
 })(jQuery);
+
+/**
+ * --------------------------------------------------------------------------
+ * Bootstrap (v4.0.0): carousel.js
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * --------------------------------------------------------------------------
+ */
 
 var Carousel = (function ($) {
 
@@ -963,6 +996,13 @@ var Carousel = (function ($) {
   return Carousel;
 })(jQuery);
 
+/**
+ * --------------------------------------------------------------------------
+ * Bootstrap (v4.0.0): collapse.js
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * --------------------------------------------------------------------------
+ */
+
 var Collapse = (function ($) {
 
   /**
@@ -1311,6 +1351,13 @@ var Collapse = (function ($) {
   return Collapse;
 })(jQuery);
 
+/**
+ * --------------------------------------------------------------------------
+ * Bootstrap (v4.0.0): dropdown.js
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * --------------------------------------------------------------------------
+ */
+
 var Dropdown = (function ($) {
 
   /**
@@ -1587,6 +1634,13 @@ var Dropdown = (function ($) {
 
   return Dropdown;
 })(jQuery);
+
+/**
+ * --------------------------------------------------------------------------
+ * Bootstrap (v4.0.0): modal.js
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * --------------------------------------------------------------------------
+ */
 
 var Modal = (function ($) {
 
@@ -2108,6 +2162,13 @@ var Modal = (function ($) {
   return Modal;
 })(jQuery);
 
+/**
+ * --------------------------------------------------------------------------
+ * Bootstrap (v4.0.0): scrollspy.js
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * --------------------------------------------------------------------------
+ */
+
 var ScrollSpy = (function ($) {
 
   /**
@@ -2412,6 +2473,13 @@ var ScrollSpy = (function ($) {
   return ScrollSpy;
 })(jQuery);
 
+/**
+ * --------------------------------------------------------------------------
+ * Bootstrap (v4.0.0): tab.js
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * --------------------------------------------------------------------------
+ */
+
 var Tab = (function ($) {
 
   /**
@@ -2658,6 +2726,13 @@ var Tab = (function ($) {
 
   return Tab;
 })(jQuery);
+
+/**
+ * --------------------------------------------------------------------------
+ * Bootstrap (v4.0.0): tooltip.js
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * --------------------------------------------------------------------------
+ */
 
 var Tooltip = (function ($) {
 
@@ -3021,6 +3096,7 @@ var Tooltip = (function ($) {
 
           // clean up after tether's junk classes
           // remove after they fix issue
+          // (https://github.com/HubSpot/tether/issues/36)
           $(this.element).removeClass(this._removeTetherClasses);
           $(this.tip).removeClass(this._removeTetherClasses);
         }
@@ -3260,6 +3336,13 @@ var Tooltip = (function ($) {
 
   return Tooltip;
 })(jQuery);
+
+/**
+ * --------------------------------------------------------------------------
+ * Bootstrap (v4.0.0): popover.js
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * --------------------------------------------------------------------------
+ */
 
 var Popover = (function ($) {
 
