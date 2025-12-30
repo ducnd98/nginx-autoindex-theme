@@ -159,6 +159,68 @@ a[href$=".webm"]:before {
    background: url(../images/icons/video.png);
 }
 
+/* Audio */
+
+a[href$=".mp3"]:before {
+   background: url(../images/icons/audio.png);
+}
+
+a[href$=".wav"]:before {
+   background: url(../images/icons/audio.png);
+}
+
+a[href$=".ogg"]:before {
+   background: url(../images/icons/audio.png);
+}
+
+a[href$=".flac"]:before {
+   background: url(../images/icons/audio.png);
+}
+
+a[href$=".m4a"]:before {
+   background: url(../images/icons/audio.png);
+}
+
+/* PDF */
+
+a[href$=".pdf"]:before {
+   background: url(../images/icons/pdf.png);
+}
+
+/* Microsoft Office Docs */
+
+a[href$=".doc"]:before {
+   background: url(../images/icons/ms_office_doc.png);
+}
+
+a[href$=".docx"]:before {
+   background: url(../images/icons/ms_office_doc.png);
+}
+
+/* Microsoft Office Excel */
+
+a[href$=".xls"]:before {
+   background: url(../images/icons/ms_office_xls.png);
+}
+
+a[href$=".xlsx"]:before {
+   background: url(../images/icons/ms_office_xls.png);
+}
+
+a[href$=".csv"]:before {
+   background: url(../images/icons/ms_office_xls.png);
+}
+
+/* Microsoft Office PowerPoint */
+
+a[href$=".pptx"]:before {
+   background: url(../images/icons/ms_office_ppt.png);
+}
+
+a[href$=".ppt"]:before {
+   background: url(../images/icons/ms_office_ppt.png);
+}
+
 /* Responsive Mobile Design */
 @media (max-width: 768px) {
     body {
